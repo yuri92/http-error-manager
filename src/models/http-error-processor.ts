@@ -7,7 +7,7 @@ export class HttpErrorProcessor {
         this.config = config;
     }
 
-    process(inputUrl: string, inputErrorCode: string): IHttpErrorModal {
+    getModal(inputUrl: string, inputErrorCode: string): IHttpErrorModal {
 
         try {
             // trovo l'api con l'errore
