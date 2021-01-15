@@ -12,8 +12,7 @@
     "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
     "test": "echo \"No test specified\"",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "prepublish": "npm run tsc",
-    "publish" : "npm run tsc && np"
+    "prepublish": "npm run tsc"
   },
   "repository": {
     "type": "git",
