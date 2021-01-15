@@ -26,8 +26,12 @@ export class HttpErrorProcessor {
 
             return modal;
         } catch (e) {
-            return this.config.genericError;
+            return this.genericError;
         }
 
+    }
+
+    get genericError(): IHttpErrorModal {
+        return this.config.genericError;
     }
 }
