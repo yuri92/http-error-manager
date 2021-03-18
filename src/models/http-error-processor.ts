@@ -8,6 +8,8 @@ export class HttpErrorProcessor {
     }
 
     getModal(inputUrl: string, inputErrorCode: string): IHttpErrorModal {
+        inputUrl = inputUrl.replace(/^.*\/\/[^\/]+/, '');
+        inputUrl = inputUrl.split('?')[0];
 
         try {
             // trovo l'api con l'errore
