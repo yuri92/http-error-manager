@@ -26,7 +26,13 @@ export class HttpErrorProcessor {
                 return errorRegex.test(inputErrorCode);
             })
 
-            return modal;
+            if(modal){
+                return modal;
+            } else {
+                return this.genericError;
+            }
+            
+
         } catch (e) {
             return this.genericError;
         }
