@@ -13,5 +13,6 @@ export interface IHttpErrorModal {
     message: string;
     buttonLabel: string;
     isBlocking: boolean;
+    code: string;
     isGeneric: boolean;
 }
